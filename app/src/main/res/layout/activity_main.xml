@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#029FEE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/back_arrow"
+                android:drawablePadding="19dp"
+                android:drawableTint="@color/white"
+                android:padding="16dp"
+                android:text="Add Buyer"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:padding="15dp"
+                android:src="@drawable/check_mark" />
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/subHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:background="#028FD6"
+            android:padding="26dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organization Name"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etOrganizationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:padding="16dp"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subHeader"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/user_logo"
+            android:drawablePadding="20dp"
+            android:drawableTint="#808080"
+            android:text="Customer Name" />
+
+        <EditText
+            android:id="@+id/etCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCustomerName"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:id="@+id/tvMobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCustomerName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:drawableTint="#808080"
+            android:text="Mobile Number"
+            app:drawableLeftCompat="@drawable/caller_logo" />
+
+        <EditText
+            android:id="@+id/etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMobileNumber"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etMobileNumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:drawableTint="#808080"
+            android:text="Email"
+            app:drawableLeftCompat="@drawable/email" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEmail"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etEmail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/caller_logo"
+            android:drawablePadding="20dp"
+            android:drawableTint="#808080"
+            android:text="Address"
+            app:drawableLeftCompat="@drawable/location_fill" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAddress"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:id="@+id/tvManufacturer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etAddress"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:drawableTint="#808080"
+            android:text="Manufacturer"
+            app:drawableLeftCompat="@drawable/industry_logo" />
+
+        <EditText
+            android:id="@+id/etManufacturer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvManufacturer"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:id="@+id/tvTaxID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etManufacturer"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:drawableTint="#808080"
+            android:text="TaxID"
+            app:drawableLeftCompat="@drawable/calculator" />
+
+        <EditText
+            android:id="@+id/etTaxID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTaxID"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:id="@+id/idCompanyId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etTaxID"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:drawableTint="#808080"
+            android:text="CompanyId"
+            app:drawableLeftCompat="@drawable/fingerprint" />
+
+        <EditText
+            android:id="@+id/etCompanyId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idCompanyId"
+            android:layout_marginLeft="50dp" />
+    </RelativeLayout>
+</ScrollView>

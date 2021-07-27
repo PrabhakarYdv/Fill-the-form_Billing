@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D61488"
+    android:padding="16dp"
+    tools:context=".DisplayActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_bg"
+
+        android:gravity="center_horizontal"
+        android:text="User Details"
+        android:textColor="#952907"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/varOrganizationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:text="Organization Name :"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvOrganizationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignRight="@id/varCustomerName"
+        android:layout_marginTop="32dp"
+        android:text="OrganizationName:"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/varCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/varOrganizationName"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="Customer Name :"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/varOrganizationName"
+        android:layout_alignRight="@id/varCustomerName"
+        android:layout_marginTop="15dp"
+        android:text="Name "
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/varMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/varCustomerName"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="Mobile Number :"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvMobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/varCustomerName"
+        android:layout_alignRight="@id/varMobileNumber"
+        android:layout_marginTop="15dp"
+        android:text="Mobile Number:"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/varEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMobileNumber"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="Email :"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMobileNumber"
+        android:layout_alignRight="@id/varEmail"
+        android:layout_marginTop="15dp"
+
+        android:text="email"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/varAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/varEmail"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="Address :"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/varEmail"
+
+        android:layout_alignRight="@id/varAddress"
+        android:layout_marginTop="15dp"
+        android:text="address"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/varManufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/varAddress"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="Manufacturer :"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvManufacturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/varAddress"
+        android:layout_alignRight="@id/varManufacturer"
+        android:layout_marginTop="15dp"
+
+        android:text="Manufacturer"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/varTaxID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/varManufacturer"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="Tax ID :"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvTaxID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/varManufacturer"
+
+        android:layout_alignRight="@id/varTaxID"
+        android:layout_marginTop="15dp"
+        android:text="tax"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/varCompanyID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/varTaxID"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="Company ID :"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvCompanyID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/varTaxID"
+        android:layout_alignRight="@id/varCompanyID"
+        android:layout_marginTop="15dp"
+        android:text="Company Id"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+</RelativeLayout>
